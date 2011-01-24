@@ -19,6 +19,18 @@ function illuminate_preprocess_page() {
     'corners' => 'bottom',
     'width' => 10,
   );
+  $commands[] = array(
+    'selector' => '#sidebar-first-inner .block',
+    'effect' => 'round',
+    'corners' => 'all',
+    'width' => 5,
+  );
+  $commands[] = array(
+    'selector' => '#sidebar-last-inner .block',
+    'effect' => 'round',
+    'corners' => 'all',
+    'width' => 5,
+  );
 
   // Add the rounded corners.
   rounded_corners_add_corners($commands);
