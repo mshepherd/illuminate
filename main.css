@@ -43,10 +43,16 @@ body {
 .header-site-info span {
   display: block;
 }
+#header-site-info {
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #eee;
+}
 
 /* Add float here to put logo and site name side by side, also add margins as
   needed */
 #logo {
+  float: left;
 }
 
 /* Link and hover styles for site name */
@@ -99,6 +105,7 @@ body {
 }
 
 .header-top {
+  margin-bottom: 10px;
 }
 
 /* Primary Menu
@@ -939,7 +946,6 @@ a.textsize_normal, a.textsize_normal:visited {
   margin-right: 0px;
 }
 #primary-menu {
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 #primary-menu a {
@@ -953,3 +959,26 @@ a.textsize_normal, a.textsize_normal:visited {
   background-color: #ccc;
 }
 
+/*
+ * header top area (contains page/text style switches and search bar by default)
+ */
+#header-top-inner {
+  background-color: #eee;
+}
+
+/*
+ * illuminate footer area
+ */
+#ifooter-inner {
+  margin: 10px;
+  text-align: center;
+}
+#ifooter-inner p {
+  margin: 0;
+}
+#ifooter {
+  background-color: #eee;
+}
+#ifooter-wrapper {
+  padding-bottom: 10px;
+}
