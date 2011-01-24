@@ -101,45 +101,52 @@ body {
 .header-top {
 }
 
-
 /* Primary Menu
 /-------------------------------------------------------------- */
 /* Add general styles for primary menu here, such as typography, borders, floats,
-  or spacing above/below */
+ *   or spacing above/below */
 .primary-menu {
 }
 
 /* styles for Superfish primary menu */
 .primary-menu-inner ul.sf-menu {
+  padding: 5px 0;
 }
 
 /* Link style for top level menu items, add padding here */
 .primary-menu-inner ul.sf-menu a,
+.primary-menu-inner ul.sf-menu .nolink,
 .primary-menu-inner ul.sf-menu a:visited  {
+  padding: 0.25em 0.5em;
 }
 
 .primary-menu-inner ul.sf-menu a:hover,
-.primary-menu-inner ul.sf-menu a:active,
 .primary-menu-inner ul.sf-menu a:focus {
+  background-color: #aaa;
+  text-decoration: underline;
 }
 
 /* These are the top level menu items, add border-right here for separators */
 .primary-menu-inner ul.sf-menu li {
+  border-right: 2px solid #aaa;
 }
 
 /* Add border-right: 0; here to remove separator on last menu item */
 .primary-menu-inner ul.sf-menu li.last {
+  border-right: 0;
 }
 
 /* Style for container of dropdown, add background or border */
 .primary-menu-inner ul.sf-menu ul {
+  margin-top: -5px;
 }
 
 /* Style for individual dropdown menu items, add border-bottom for separators */
 .primary-menu-inner ul.sf-menu li li {
-  background-color: #fff;
+  background-color: #ccc;
+  border-bottom: 2px solid #aaa;
+  border-right: 0px;
 }
-
 .primary-menu-inner ul.sf-menu li li.last {
 
 }
@@ -151,6 +158,7 @@ body {
 .primary-menu-inner ul.sf-menu li ul li:hover,
 .primary-menu-inner ul.sf-menu li ul li.sfHover {
 }
+
 
 
 /* Secondary menu
@@ -923,4 +931,25 @@ a.textsize_normal, a.textsize_normal:visited {
   min-height:32px;
 }
 
+/*
+ * primary menu
+ */
+#primary-menu-inner {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#primary-menu {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#primary-menu a {
+  color: black;
+  font-size: 120%;
+  font-weight: bold !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#primary-menu,
+#primary-menu li.expanded ul.menu li {
+  background-color: #ccc;
+}
 
