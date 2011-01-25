@@ -225,6 +225,21 @@ body {
 .search-box-inner input#edit-search-theme-form-header {
 }
 
+#search-block-form input#edit-search-block-form-1 {
+  font-size: 125%;
+}
+.container-inline div#edit-search-block-form-1-wrapper {
+  display: block;
+  float: left;
+  margin-top:0;
+  margin-bottom: 0;
+}
+#search-block-form #edit-submit {
+  display: block;
+  float:left;
+  margin-top: 0;
+  font-size: 95%;
+}
 
 /*  Preface Regions
 -------------------------------------------------------------- */
@@ -850,12 +865,12 @@ input.list-add-to-cart:focus {
  */
 #block-textsize-0 .inner,
 #block-pagestyle-0 .inner {
-  margin-right: 0;
 }
 #block-textsize-0 ul.textsize_inline,
 #block-pagestyle-0 ul.pagestyle_inline {
   margin-top: 0;
   margin-bottom: 0;
+  float: right;
 }
 /* change images for access switches */
 head:first-child + body a.pagestyle_black_white,
@@ -977,6 +992,10 @@ a.textsize_normal, a.textsize_normal:visited {
  */
 #header-top-inner {
   background-color: #eee;
+}
+#header-top-inner .block {
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 /*
