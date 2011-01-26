@@ -47,6 +47,7 @@ body {
   width: 100%;
   margin-bottom: 0;
   background-color: #eee;
+  margin-top: 10px;
 }
 
 /* Add float here to put logo and site name side by side, also add margins as
@@ -118,7 +119,6 @@ body {
 }
 
 .header-top {
-  margin-bottom: 10px;
 }
 
 /* Primary Menu
@@ -142,13 +142,13 @@ body {
 
 .primary-menu-inner ul.sf-menu a:hover,
 .primary-menu-inner ul.sf-menu a:focus {
-  background-color: #aaa;
+  background-color: #eee;
   text-decoration: underline;
 }
 
 /* These are the top level menu items, add border-right here for separators */
 .primary-menu-inner ul.sf-menu li {
-  border-right: 2px solid #aaa;
+  border-right: 2px solid #eee;
 }
 
 /* Add border-right: 0; here to remove separator on last menu item */
@@ -250,9 +250,15 @@ body {
 }
 
 .preface-top {
+  margin-bottom: 10px;
 }
 
 .preface-top-inner {
+  background-color: #eee;
+}
+.preface-top-inner .block {
+  margin-top: 5px;
+  margin-bottom: 3px;
 }
 
 .preface-bottom {
@@ -977,14 +983,14 @@ a.textsize_normal, a.textsize_normal:visited {
   margin-bottom: 10px;
 }
 #primary-menu a {
-  color: black;
+  color: #606060;
   font-size: 120%;
   font-weight: bold !important;
   font-family: Arial, Helvetica, sans-serif;
 }
 #primary-menu,
 #primary-menu li.expanded ul.menu li {
-  background-color: #ccc;
+  background-color: #dfdfdf;
 }
 
 /*
@@ -995,7 +1001,7 @@ a.textsize_normal, a.textsize_normal:visited {
 }
 #header-top-inner .block {
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 /*

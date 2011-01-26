@@ -8,6 +8,12 @@ function illuminate_preprocess_page() {
     'width' => 10,
   );
   $commands[] = array(
+    'selector' => '#preface-top-inner',
+    'effect' => 'round',
+    'corners' => 'all',
+    'width' => 5,
+  );
+  $commands[] = array(
     'selector' => '#header-site-info',
     'effect' => 'round',
     'corners' => 'top',
