@@ -11,12 +11,14 @@ body {
 a,
 a:link,
 a:visited {
+  color: #0078c2;
 }
 
 /* Hover/active link styles. Don't forget :focus for accessibility */
 a:hover,
 a:focus,
 a:active {
+  color: #0078c2;
 }
 
 
@@ -1036,3 +1038,58 @@ a.textsize_normal, a.textsize_normal:visited {
 h2.block-title {
   margin-top: 10px;
 }
+
+/*
+ * image galleries
+ */
+
+/*
+ * styles for a gallery
+ */
+#view-id-node_gallery_gallery_image_views-page_4 ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+#view-id-node_gallery_gallery_image_views-page_4 ul li {
+  list-style: none;
+  width: 220px;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #606060;
+}
+
+
+/*
+ * styles for the gallery list page
+ */
+.view-node-gallery-gallery-summaries h2.title {
+  width: 50%;
+  float: right;
+  border-top: 2px solid #eee;
+  padding-top: 5px;
+}
+.view-node-gallery-gallery-summaries div.gallery-body-content {
+  width: 50%;
+  float: right;
+  clear: right;
+}
+.view-node-gallery-gallery-summaries .view-node-gallery-gallery-image-views {
+  width: 242px;
+}
+.view-node-gallery-gallery-summaries .view-node-gallery-gallery-image-views ul {
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+.view-node-gallery-gallery-summaries .view-node-gallery-gallery-image-views ul li {
+  list-style: none;
+  width: 220px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #606060;
+}
+
