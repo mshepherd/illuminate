@@ -1015,6 +1015,7 @@ a.textsize_normal, a.textsize_normal:visited {
 }
 #ifooter-inner p {
   margin: 0;
+  font-size: 80%;
 }
 #ifooter {
   background-color: #eee;
