@@ -1,5 +1,51 @@
 WHAT IS THIS THEME
 ==================
-This is intended as a fairly general purpose theme to quicken illuminate's development of site themes for clients. It's a subtheme of Fusion Core, a Drupal starter theme. http://drupal.org/project/fusion. It works well with, and in some cases relies on, a number of Drupal modules. These will be outlined here. Some day, this may be released as a Drupal installation profile, but probably not until it has been ported to Drupal 7.
+This is intended as a fairly general purpose theme to quicken illuminate's
+development of site themes for clients. It's a subtheme of Fusion Core, a
+Drupal starter theme. http://drupal.org/project/fusion. It works well with, and
+in some cases relies on, a number of Drupal modules. These will be outlined
+here. Some day, this may be released as a Drupal installation profile, but
+probably not until it has been ported to Drupal 7.
 
+Requirements
+------------
 
+* This is a fusion sub-theme and will not work without fusion core.
+  - http://drupal.org/project/fusion - 6.x-1.0 or above
+
+* I've implemented rounded corners in the theme. These are defined in the
+  template.php file and the functions there are defined in the rounded corners
+  module. You'll need to install and enable that module before enabling this
+  theme. Mark my words!
+  - http://drupal.org/project/rounded_corners - version 6.x-3.0-alpha2 or above
+
+Other stuff
+-----------
+
+* I've used the node_gallery module for image galleries on my template site.
+  It's getting more and more mature and flexible with each release. The newer
+  releases support views much more completely and this theme provides styling
+  galleries and images of those recent releases
+  - http://drupal.org/project/node_gallery - version 6.x-3.0-alpha2 or above
+
+* We're an organisation who work closely with charities and voluntary sector
+  organisations, many of whom have very specific accessibility requirements.
+  I've used the page_style and text_size modules to provide style switches to
+  change background/foreground colours and text size. This theme provides
+  styles and new images for these 2 modules. I found the default images too
+  small - our customers made this same comment.
+  - http://drupal.org/project/pagestyle - version 6.x-1.9 or above
+  - http://drupal.org/project/textsize - version 6.x-1.9 or above
+
+Overrides
+---------
+
+This theme overrides some drupal defaults and some module defaults:
+
+* Some template.php code makes some changes to the block search form, it leaves
+  the default search form alone.
+
+* Some node_gallery behaviour is changed in a custom module. I'll make that
+  available here too when I get a chance. I like to have the gallery
+  description (body text) before the images on the gallery page. And I prefer
+  to have the title and teaser text together on the gallery list page.
