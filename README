@@ -37,6 +37,10 @@ Other stuff
   - http://drupal.org/project/pagestyle - version 6.x-1.9 or above
   - http://drupal.org/project/textsize - version 6.x-1.9 or above
 
+* I prefer a little control over the readmore link and I've used the Read More
+  Link module. This theme provides a style override for the gallery list page,
+  moving the link so it sits under the body text.
+
 Overrides
 ---------
 

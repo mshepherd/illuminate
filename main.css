@@ -1078,6 +1078,11 @@ h2.block-title {
   float: right;
   clear: right;
 }
+.view-node-gallery-gallery-summaries .read-more {
+  width: 50%;
+  float: right;
+  clear: right;
+}
 .view-node-gallery-gallery-summaries .view-node-gallery-gallery-image-views {
   width: 242px;
 }
