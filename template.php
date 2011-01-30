@@ -1,5 +1,8 @@
 <?php
-function illuminate_preprocess_page() {
+function illuminate_preprocess_page(&$vars) {
+  if ($stylor = pagestyle_get_current()) {
+    $vars['body_classes'] .= ' pagestyle_'. $stylor;
+  }
   $commands = array();
   $commands[] = array(
     'selector' => '#header-top-inner',
@@ -14,7 +17,7 @@ function illuminate_preprocess_page() {
     'width' => 5,
   );
   $commands[] = array(
-    'selector' => '#header-site-info',
+    'selector' => '#header-group-inner',
     'effect' => 'round',
     'corners' => 'top',
     'width' => 10,
@@ -79,4 +82,3 @@ function illuminate_preprocess_search_block_form(&$vars, $hook) {
   // Collect all form elements to make it easier to print the whole form.
   $vars['search_form'] = implode($vars['search']);
 }
-

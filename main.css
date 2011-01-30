@@ -49,8 +49,11 @@ body {
 #header-site-info {
   width: 100%;
   margin-bottom: 0;
+}
+#header-group-inner {
   background-color: #eee;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Add float here to put logo and site name side by side, also add margins as
@@ -983,7 +986,7 @@ a.textsize_normal, a.textsize_normal:visited {
   margin-right: 0px;
 }
 #primary-menu {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 #primary-menu a {
   color: #606060;
@@ -1100,3 +1103,59 @@ h2.block-title {
   border: 1px solid #606060;
 }
 
+/*
+ * page style module adjustments and additions
+ */
+.pagestyle_black_white #sidebar-first-inner .block .inner,
+.pagestyle_black_white #sidebar-last-inner .block .inner {
+  border: 2px solid #000;
+}
+.pagestyle_black_white .sf-menu li.expanded ul.menu {
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+.pagestyle_black_white div.row>div.inner {
+  border-bottom: 2px solid #000;
+}
+
+
+.pagestyle_white_black #sidebar-first-inner .block .inner,
+.pagestyle_white_black #sidebar-last-inner .block .inner {
+  border: 2px solid #fff;
+}
+.pagestyle_white_black .sf-menu li.expanded ul.menu {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.pagestyle_white_black div.row>div.inner {
+  border-bottom: 2px solid #fff;
+}
+
+
+.pagestyle_yellow_blue #sidebar-first-inner .block .inner,
+.pagestyle_yellow_blue #sidebar-last-inner .block .inner {
+  border: 2px solid #ff0;
+}
+.pagestyle_yellow_blue .sf-menu li.expanded ul.menu {
+  border-left: 2px solid #ff0;
+  border-right: 2px solid #ff0;
+  border-bottom: 2px solid #ff0;
+}
+.pagestyle_yellow_blue div.row>div.inner {
+  border-bottom: 2px solid #ff0;
+}
+
+
+/*
+ * misc fixes and styles
+ */
+
+/*
+ * lightbox modal for login will not close properly
+ * z-index problem
+ */
+.lightmodal-login #frameHoverNav {
+  z-index: -1 !important;
+}
