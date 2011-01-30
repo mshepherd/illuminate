@@ -1,11 +1,39 @@
 <?php
+/**
+* Override or insert PHPTemplate variables into the templates.
+*/
+function acquia_prosper_preprocess_page(&$vars) {
+
+  // Add per content type pages
+  if (isset($vars['node'])) {
+
+  // Add template naming suggestion. It should alway use hyphens.
+  // If node type is "custom_news", it will pickup "page-custom-news.tpl.php".
+  $vars['template_files'][] = 'page-'. str_replace('_', '-', $vars['node']->type);
+  }
+
+}
 function illuminate_preprocess_page(&$vars) {
+  // Add per content type pages
+  if (isset($vars['node'])) {
+    // Add template naming suggestion. It should alway use hyphens.
+    // If node type is "custom_news", it will pickup "page-custom-news.tpl.php".
+    $vars['template_files'][] = 'page-'. str_replace('_', '-', $vars['node']->type);
+  }
+
   if ($stylor = pagestyle_get_current()) {
     if ($stylor != 'standard') {
       $vars['body_classes'] .= ' pagestyle_'. $stylor;
     }
   }
+
   $commands = array();
+  $commands[] = array(
+    'selector' => '.image-body-content',
+    'effect' => 'round',
+    'corners' => 'all',
+    'width' => 10,
+  );
   $commands[] = array(
     'selector' => '#header-top-inner',
     'effect' => 'round',
