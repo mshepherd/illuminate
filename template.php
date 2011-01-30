@@ -1,7 +1,9 @@
 <?php
 function illuminate_preprocess_page(&$vars) {
   if ($stylor = pagestyle_get_current()) {
-    $vars['body_classes'] .= ' pagestyle_'. $stylor;
+    if ($stylor != 'standard') {
+      $vars['body_classes'] .= ' pagestyle_'. $stylor;
+    }
   }
   $commands = array();
   $commands[] = array(

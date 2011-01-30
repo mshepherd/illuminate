@@ -49,7 +49,7 @@ This theme overrides some drupal defaults and some module defaults:
 * Some template.php code makes some changes to the block search form, it leaves
   the default search form alone.
 
-* Some node_gallery behaviour is changed in a custom module. I'll make that
-  available here too when I get a chance. I like to have the gallery
+* Some node_gallery behaviour is changed in a custom module. See
+  https://github.com/mshepherd/iutilities. I like to have the gallery
   description (body text) before the images on the gallery page. And I prefer
   to have the title and teaser text together on the gallery list page.
