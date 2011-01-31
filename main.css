@@ -356,6 +356,9 @@ h1.title {
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 5px;
 }
+.not-page h1.title {
+  margin-bottom: 15px;
+}
 
 /* Default node styles
 /-------------------------------------------------------------- */
@@ -1074,9 +1077,6 @@ h2.block-title {
 /*
  * styles for the gallery list page
  */
-.page-galleries h1.title {
-  margin-bottom: 15px;
-}
 .view-node-gallery-gallery-summaries h2.title {
   width: 50%;
   float: right;
@@ -1213,7 +1213,6 @@ table#node-gallery-image-navigator td {
   border-bottom: 1px solid #606060;
   padding-bottom: 15px;
 }
-
 
 /*
  * misc fixes and styles
