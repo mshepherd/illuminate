@@ -1109,6 +1109,10 @@ h2.block-title {
   background-color: #eee;
   border: 1px solid #606060;
 }
+.not-page .view-node-gallery-gallery-summaries .node-type-node_gallery_gallery {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+}
 
 /*
  * styles for an image that's part of a gallery
