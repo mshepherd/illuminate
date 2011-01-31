@@ -1194,6 +1194,42 @@ table#node-gallery-image-navigator td {
 }
 
 /*
+ * apply some styling to the event node types
+ */
+.not-page .node-type-event .field-type-datetime {
+  width: 120px;
+  float:left;
+  background-color: #eee;
+  padding: 10px;
+  margin-right: 5px;
+}
+.not-page .node-type-event .body-field-content {
+  float: right;
+  width: 374px;
+}
+.not-page .node-type-event .read-more {
+  clear: both;
+  float: right;
+  width: 374px;
+}
+
+.full-node .node-type-event .field-type-datetime {
+  width: 120px;
+  float:left;
+  background-color: #eee;
+  padding: 10px;
+  margin-right: 5px;
+}
+.full-node .node-type-event .body-field-content {
+  float: right;
+  width: 374px;
+}
+.full-node .node-type-event .links {
+  float: right;
+  width: 374;
+}
+
+/*
  * news list page
  */
 
