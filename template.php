@@ -2,17 +2,6 @@
 /**
 * Override or insert PHPTemplate variables into the templates.
 */
-function acquia_prosper_preprocess_page(&$vars) {
-
-  // Add per content type pages
-  if (isset($vars['node'])) {
-
-  // Add template naming suggestion. It should alway use hyphens.
-  // If node type is "custom_news", it will pickup "page-custom-news.tpl.php".
-  $vars['template_files'][] = 'page-'. str_replace('_', '-', $vars['node']->type);
-  }
-
-}
 function illuminate_preprocess_page(&$vars) {
   // Add per content type pages
   if (isset($vars['node'])) {
@@ -25,6 +14,10 @@ function illuminate_preprocess_page(&$vars) {
     if ($stylor != 'standard') {
       $vars['body_classes'] .= ' pagestyle_'. $stylor;
     }
+  }
+
+  if (!isset($vars['node'])) {
+    $vars['body_classes'] .= ' not-page';
   }
 
   $commands = array();

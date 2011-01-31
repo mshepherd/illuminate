@@ -106,6 +106,11 @@
                                 <?php if ($title): ?>
                                 <h1 class="title"><?php print $title; ?></h1>
                                 <?php endif; ?>
+                                <?php $arg0 = arg(0); ?>
+                                <?php $arg1 = arg(1); ?>
+                                <?php if ($arg0 == 'node' && empty($arg1) ): ?>
+                                <h1 class="title">Recent News</h1>
+                                <?php endif; ?>
                                 <?php if ($content): ?>
                                 <div id="content-content" class="content-content">
                                   <?php print $content; ?>

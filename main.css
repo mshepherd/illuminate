@@ -353,7 +353,9 @@ body {
 /* Page and full node titles */
 h1.title {
 }
-
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 5px;
+}
 
 /* Default node styles
 /-------------------------------------------------------------- */
@@ -385,6 +387,8 @@ h2.title a:active {
 
 /* Author/date info */
 .meta {
+  font-size: 85%;
+  font-style: italic;
 }
 
 .submitted {
@@ -1070,6 +1074,9 @@ h2.block-title {
 /*
  * styles for the gallery list page
  */
+.page-galleries h1.title {
+  margin-bottom: 15px;
+}
 .view-node-gallery-gallery-summaries h2.title {
   width: 50%;
   float: right;
@@ -1115,6 +1122,9 @@ h2.block-title {
   margin-top: 10px;
   padding: 10px 0;
 }
+table#node-gallery-image-navigator td {
+  background-color: #eee;
+}
 
 /*
  * page style module adjustments and additions
@@ -1158,6 +1168,50 @@ h2.block-title {
 }
 .pagestyle_yellow_blue div.row>div.inner {
   border-bottom: 2px solid #ff0;
+}
+
+/*
+ * anything calendary or datey
+ */
+
+/*
+ * tidy the calendar page
+ */
+.page-calendar h1.title {
+  float: left;
+}
+.page-calendar div.calendar-calendar div.clear-block {
+  float: right;
+}
+.page-calendar div.calendar-calendar div.date-nav {
+  float: none;
+}
+.page-calendar div.calendar-calendar ul.links {
+  clear: left;
+}
+.view-calendar .attachment {
+  clear:both;
+}
+
+/*
+ * news list page
+ */
+
+/*
+ * sticky styling
+ */
+.not-page .sticky {
+  padding: 15px;
+  border: 1px solid #606060;
+  background-color: #f9f9f9;
+}
+
+/*
+ * news page styling
+ */
+.not-page .teaser {
+  border-bottom: 1px solid #606060;
+  padding-bottom: 15px;
 }
 
 

@@ -28,12 +28,6 @@
       <?php print $content ?>
     </div>
 
-    <?php if ($terms): ?>
-    <div class="terms">
-      <?php print $terms; ?>
-    </div>
-    <?php endif;?>
-
     <?php if ($links): ?>
     <div class="links">
       <?php print $links; ?>
