@@ -276,6 +276,12 @@ body {
 /*  Main Area (content + sidebars + preface bottom + postscript top)
 -------------------------------------------------------------- */
 .main-wrapper {
+  position: relative;
+  z-index: 0;
+}
+.header-group-wrapper {
+  position: relative;
+  z-index: 100;
 }
 
 
