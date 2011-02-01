@@ -20,8 +20,8 @@ regions[content_bottom] = content bottom
 ; regions[postscript_top] = postscript top
 ; regions[postscript_bottom] = postscript bottom
 regions[footer] = footer
-regions[node_top] = node top
-regions[node_bottom] = node bottom
+; regions[node_top] = node top
+; regions[node_bottom] = node bottom
 
 features[] = logo
 features[] = name

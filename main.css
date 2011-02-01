@@ -31,7 +31,6 @@ a:active {
 }
 
 .footer-message {
-  font-size: 90%;
 }
 
 
@@ -304,6 +303,16 @@ body {
 .content-bottom {
 }
 
+#content-top .block .inner,
+#content-content .block .inner,
+#content-bottom .block .inner {
+  background-color: #eee;
+  padding: 5px;
+}
+#content-content .block {
+  width: 100%;
+}
+
 /* This region only appears on full node pages. It's useful for ads or other
   content between the body of the node and its comments */
 .node-bottom {
@@ -332,7 +341,9 @@ body {
 .footer {
 }
 
-.footer-inner {
+#footer-inner {
+  background-color: #eee;
+  padding-top: 10px;
 }
 
 .footer-message-wrapper {
@@ -341,10 +352,14 @@ body {
 .footer-message {
 }
 
-.footer-message-inner {
+#footer-message-inner {
+  background-color: #eee;
 }
 
-.footer-message-text {
+#footer-message-text {
+  margin-bottom: 0;
+  padding: 5px;
+  text-align: center;
 }
 
 

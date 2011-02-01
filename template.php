@@ -22,6 +22,24 @@ function illuminate_preprocess_page(&$vars) {
 
   $commands = array();
   $commands[] = array(
+    'selector' => '#content-top .block .inner',
+    'effect' => 'round',
+    'corners' => 'all',
+    'width' => 5,
+  );
+  $commands[] = array(
+    'selector' => '#content-content .block .inner',
+    'effect' => 'round',
+    'corners' => 'all',
+    'width' => 5,
+  );
+  $commands[] = array(
+    'selector' => '#content-bottom .block .inner',
+    'effect' => 'round',
+    'corners' => 'all',
+    'width' => 5,
+  );
+  $commands[] = array(
     'selector' => '.image-body-content',
     'effect' => 'round',
     'corners' => 'all',
