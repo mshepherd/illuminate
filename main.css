@@ -6,6 +6,7 @@
 body {
   font-size: 75%;   /* also set in fusion_starter.info: settings[base-font-size] = font-size-12 */
   color: #444;
+  background-color: #fff;
 }
 
 /* Default link styles - separate a:visited for a different visited link style */
@@ -1099,23 +1100,16 @@ h2.block-title {
  * styles for the gallery list page
  */
 .view-node-gallery-gallery-summaries h2.title {
-  width: 50%;
-  float: right;
   border-top: 2px solid #eee;
   padding-top: 5px;
 }
 .view-node-gallery-gallery-summaries div.gallery-body-content {
-  width: 50%;
-  float: right;
-  clear: right;
-}
-.view-node-gallery-gallery-summaries .read-more {
-  width: 50%;
-  float: right;
-  clear: right;
+  width: 265px;
+  margin-left: 252px;
 }
 .view-node-gallery-gallery-summaries .view-node-gallery-gallery-image-views {
   width: 242px;
+  float: left;
 }
 .view-node-gallery-gallery-summaries .view-node-gallery-gallery-image-views ul {
   list-style-type: none;
@@ -1125,7 +1119,6 @@ h2.block-title {
 .view-node-gallery-gallery-summaries .view-node-gallery-gallery-image-views ul li {
   list-style: none;
   width: 220px;
-  margin-right: 10px;
   padding: 10px;
   background-color: #eee;
   border: 1px solid #606060;
