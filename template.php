@@ -15,77 +15,79 @@ function illuminate_preprocess_page(&$vars) {
       $vars['body_classes'] .= ' pagestyle_'. $stylor;
     }
   }
-
   if (!isset($vars['node'])) {
     $vars['body_classes'] .= ' not-page';
   }
 
-  $commands = array();
-  $commands[] = array(
-    'selector' => '#content-top .block .inner',
-    'effect' => 'round',
-    'corners' => 'all',
-    'width' => 5,
-  );
-  $commands[] = array(
-    'selector' => '#content-content .block .inner',
-    'effect' => 'round',
-    'corners' => 'all',
-    'width' => 5,
-  );
-  $commands[] = array(
-    'selector' => '#content-bottom .block .inner',
-    'effect' => 'round',
-    'corners' => 'all',
-    'width' => 5,
-  );
-  $commands[] = array(
-    'selector' => '.image-body-content',
-    'effect' => 'round',
-    'corners' => 'all',
-    'width' => 10,
-  );
-  $commands[] = array(
-    'selector' => '#header-top-inner',
-    'effect' => 'round',
-    'corners' => 'bottom',
-    'width' => 10,
-  );
-  $commands[] = array(
-    'selector' => '#preface-top-inner',
-    'effect' => 'round',
-    'corners' => 'all',
-    'width' => 5,
-  );
-  $commands[] = array(
-    'selector' => '#header-group-inner',
-    'effect' => 'round',
-    'corners' => 'top',
-    'width' => 10,
-  );
-  $commands[] = array(
-    'selector' => '#ifooter',
-    'effect' => 'round',
-    'corners' => 'bottom',
-    'width' => 10,
-  );
-  $commands[] = array(
-    'selector' => '#sidebar-first-inner .block',
-    'effect' => 'round',
-    'corners' => 'all',
-    'width' => 5,
-  );
-  $commands[] = array(
-    'selector' => '#sidebar-last-inner .block',
-    'effect' => 'round',
-    'corners' => 'all',
-    'width' => 5,
-  );
-
-  // Add the rounded corners.
-  rounded_corners_add_corners($commands);
-  $variables['scripts'] = drupal_get_js();
+  if ($stylor == 'standard') {
+    $commands = array();
+    $commands[] = array(
+      'selector' => '#content-top .block .inner',
+      'effect' => 'round',
+      'corners' => 'all',
+     'width' => 5,
+    );
+    $commands[] = array(
+      'selector' => '#content-content .block .inner',
+      'effect' => 'round',
+      'corners' => 'all',
+      'width' => 5,
+    );
+    $commands[] = array(
+      'selector' => '#content-bottom .block .inner',
+      'effect' => 'round',
+      'corners' => 'all',
+      'width' => 5,
+    );
+    $commands[] = array(
+      'selector' => '.image-body-content',
+      'effect' => 'round',
+      'corners' => 'all',
+      'width' => 10,
+    );
+    $commands[] = array(
+      'selector' => '#header-top-inner',
+      'effect' => 'round',
+      'corners' => 'bottom',
+      'width' => 10,
+    );
+    $commands[] = array(
+      'selector' => '#preface-top-inner',
+      'effect' => 'round',
+      'corners' => 'all',
+      'width' => 5,
+    );
+    $commands[] = array(
+      'selector' => '#header-group-inner',
+      'effect' => 'round',
+      'corners' => 'top',
+      'width' => 10,
+    );
+    $commands[] = array(
+      'selector' => '#ifooter',
+      'effect' => 'round',
+      'corners' => 'bottom',
+      'width' => 10,
+    );
+    $commands[] = array(
+      'selector' => '#sidebar-first-inner .block',
+      'effect' => 'round',
+      'corners' => 'all',
+      'width' => 5,
+    );
+    $commands[] = array(
+      'selector' => '#sidebar-last-inner .block',
+      'effect' => 'round',
+      'corners' => 'all',
+      'width' => 5,
+    );
+ 
+    // Add the rounded corners.
+    rounded_corners_add_corners($commands);
+    $variables['scripts'] = drupal_get_js();
+  }
 }
+
 function illuminate_preprocess_search_block_form(&$vars, $hook) {
   // Note that in order to theme a search block you should rename this function
   // to yourthemename_preprocess_search_block_form and use
