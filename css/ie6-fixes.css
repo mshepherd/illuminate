@@ -8,3 +8,29 @@ div.pngfix,
   behavior: url(/sites/all/themes/fusion/fusion_core/js/iepngfix.htc);
 }
 */
+
+/*
+ * fix for pagestyle buttons in ie6
+ */
+a.pagestyle_black_white, a.pagestyle_black_white:visited {
+    background-image: url("../images/black_white.png") !important;
+}
+a.pagestyle_white_black, a.pagestyle_white_black:visited {
+    background-image: url("../images/white_black.png") !important;
+}
+a.pagestyle_yellow_blue, a.pagestyle_yellow_blue:visited {
+    background-image: url("../images/yellow_blue.png") !important;
+}
+a.pagestyle_standard, a.pagestyle_standard:visited {
+    background-image: url("../images/standard.png") !important;
+}
+
+a.textsize_increase, a.textsize_increase:visited {
+    background-image: url("../images/increase.png") !important;
+}
+a.textsize_decrease, a.textsize_decrease:visited {
+    background-image: url("../images/decrease.png") !important;
+}
+a.textsize_normal, a.textsize_normal:visited {
+    background-image: url("../images/normal.png") !important;
+}
