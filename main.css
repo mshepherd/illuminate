@@ -1279,3 +1279,8 @@ table#node-gallery-image-navigator td {
 .lightmodal-login #frameHoverNav {
   z-index: -1 !important;
 }
+
+#sidebar-first-inner #block-logintoboggan-0,
+#sidebar-last-inner #block-logintoboggan-0 {
+  background-color: #fab;
+}
